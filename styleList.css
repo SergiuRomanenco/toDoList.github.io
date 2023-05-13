@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+.toDoList{
+    width: 450px;
+    height: 550px;
+    background-color: rgba(128, 128, 128, 0.516);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 120px;
+    background-color: #4159d07a;
+}
+h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+}
+
+.inputText{
+    display: flex;
+    width: 90%;
+}
+
+#myList{
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.518);
+}
+
+.btnAdd{
+    background-color: rgba(128, 128, 128, 0.648);
+    width: 20%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btnAdd:hover{
+    background-color: rgba(85, 84, 84, 0.648);
+}
+
+.myUL{
+    height: 430px;
+    overflow: auto;
+}
+
+.myUL li{
+    padding: 10px;
+    list-style-type: none;
+    position: relative;
+    padding-left: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    overflow: auto;
+}
+
+.myUL li:nth-child(2n){
+    background-color: rgba(50, 50, 50, 0.452);
+}
+.myUL li:nth-child(2n+1){
+    background-color: rgba(134, 134, 134, 0.452);
+}
+
+.close{
+    position: absolute;
+    padding: 10px 14px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.close:hover{
+    background-color: rgba(255, 0, 0, 0.416);
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+.checked::before{
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
