@@ -72,6 +72,7 @@ h2{
     font-family: 'Noto Sans', sans-serif;
     color: white;
     overflow: auto;
+    cursor: pointer;
 }
 
 .myUL li:nth-child(2n){
