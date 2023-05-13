@@ -11,8 +11,9 @@ body{
     place-items: center;
     background-image: url('./background.jpg');
     background-size: cover;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    overflow: hidden;
+
 }
 
 .toDoList{
@@ -45,6 +46,7 @@ h2{
     outline: none;
     border: none;
     background-color: rgba(255, 255, 255, 0.518);
+    border-radius: 0px;
 }
 
 .btnAdd{
